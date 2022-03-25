@@ -11,4 +11,4 @@ Currently needs:
 Project state is the most updated in development form. 
 It may not run without a few necessary changes.
 
-Made with HTML5, CSS, JS, PHP, and Bootstrap.
+Made with HTML5, CSS, JS, jQuery, PHP, and Bootstrap.
