@@ -1,0 +1,27 @@
+#inventory-title{
+    text-align: center;
+    margin: 16px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .subHeading{
+    font-family:'Open Sans', sans-serif;
+    font-size: large;
+  }
+
+  .formCustom{
+      margin-right: 25%;
+      margin-left: 25%;
+  }
+
+  .table-format {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .table-header {
+    background-color: #ff0000;
+    color: #fff;
+  }

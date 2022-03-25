@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inventory Tracker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="script.js" rel="script"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark" style="background-color: #ff0000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">Inventory Tracker</a>
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor"
+                aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Add Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Edit.html">Edit Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Remove.html">Remove Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Show.html">Show Table</a>
+                      </li>
+                    </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="inventory-title">
+        <h1>Inventory Tracking System</h1>
+        <p class="subHeading">Used to track quantity and price of a business's inventory</p>
+    </div>
+
+    <form id="del-form" 
+        class="formCustom"
+        action="" 
+        onsubmit="return deleteTable()"
+        method="post">
+        
+        <legend>Remove an item</legend>
+        
+        <div class="mb-3">
+          <label for="item-name-input" class="form-label">Item Name</label>
+          <input type="text" class="form-control" id="item-name-input" aria-describedby="itemName" aria-required="true">
+          <div id="remove-help" class="form-text">Must enter the exact way the item is typed out.</div>
+        </div>
+        <button type="submit" class="btn btn-danger" style="background-color: red; text-decoration: none;">Submit</button>
+      </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  </html>

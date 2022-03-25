@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inventory Tracker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="script.js" rel="script"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark" style="background-color: #ff0000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inventory Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor"
+                aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Add Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="edit.html">Edit Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="remove.html">Remove Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="show.php">Show Table</a>
+                      </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="inventory-title">
+      <h1>Inventory Tracking System</h1>
+      <p class="subHeading">Used to track quantity and price of a business's inventory</p>
+    </div>
+
+    <form id="edit-form" class="formCustom" action="" method="post">
+      <legend>Edit an item</legend>
+      <div class="mb-3">
+        <label for="item-name-input" class="form-label">Item Name</label>
+        <input type="text" class="form-control" id="item-name-input" name="item-name-input" 
+        aria-describedby="itemName" aria-required="true">
+        <div id="edit-item-help" class="form-text">Must enter the exact way the item is typed out.</div>
+      </div>
+      <div class="mb-3">
+        <label for="field-name-input" class="form-label">Field to be changed</label>
+        <select name="field-name-input" class="form-select" area-describedby="fieldName" aria-required="true">
+          <option aria-selected>No Field</option>
+          <option value="Item Name">Item Name</option>
+          <option value="Inventory">Inventory</option>
+          <option value="Unit Type">Unit Type</option>
+          <option value="Number Purchased">Number Purchased</option>
+          <option value="Number Sold">Number Sold</option>
+          <option value="Purchase Price">Purchase Price</option>
+        </select>
+      <div id="field-help" class="form-text">Must select the field you want changed.</div>
+      </div>
+      <div class="mb-3">
+        <label for="change-field-input" class="form-label">Replacement Value</label>
+        <input type="text" class="form-control" id="change-field-input" name="change-field-input" aria-describedby="changeField" aria-required="true">
+        <div id="change-field-help" class="form-text">The new value you want to replace the old one with.</div>
+      </div>
+      <button type="submit" class="btn btn-danger" style="background-color: red; text-decoration: none;">Submit</button>
+  </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  </html>
