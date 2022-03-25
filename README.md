@@ -7,3 +7,8 @@ Currently needs:
 
 ! Warnings and possible errors encountered ?
 - Page to store data to txt document may have broken, needs looking into.
+
+Project state is the most updated in development form. 
+It may not run without a few necessary changes.
+
+Made with HTML5, CSS, JS, PHP, and Bootstrap.
